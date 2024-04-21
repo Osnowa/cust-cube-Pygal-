@@ -20,7 +20,7 @@ for value in range(2, max_result+1):
 hist = pygal.Bar()
 
 hist.title = 'Результат за 1000 бросков 2 кубиков D6'
-hist.x_labels = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+hist.x_labels = [str(e) for e in range(2, 13)]
 hist.x_title = "Result"
 hist.y_title = 'Frequency of Result'
 
